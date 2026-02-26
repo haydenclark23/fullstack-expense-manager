@@ -26,7 +26,7 @@ A full-stack Vibe Coding expense tracking application built with React (Vite) an
 ### Backend
 - ASP.NET Core
 - Entity Framework Core
-- Swagger
+- SQLite
 
 ### Frontend
 - Vue 3 (Vite)
@@ -66,6 +66,14 @@ dotnet run
 
 Swagger will be available at: https://localhost:5246/swagger
 
+### 🗄 Database Setup
+
+From inside the backend folder:
+
+```bash
+dotnet ef database update
+```
+
 ### 3️⃣ Frontend Setup
 
 ```bash
@@ -84,10 +92,8 @@ VITE_API_URL=http://localhost:5246/api/expense
 
 ---
 
-🌎 Possible Future Improvements
+### 🌎 Possible Future Improvements
 - Authentication
 - Deployment
 - Filtering & sorting
 - Export to CSV
-
----
